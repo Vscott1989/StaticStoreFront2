@@ -1,0 +1,219 @@
+/*common elements*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{    
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h4{
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-size: 20px;
+    text-align: center;
+    animation: Sale 8s infinite;
+
+}
+@keyframes Sale{
+    10%{margin-left: 200px;}
+    20%{margin-right: 200px;}
+    30%{margin-left: 200px;}
+    40%{margin-right: 200px;}
+    50%{margin-left: 200px;}
+    60%{margin-right: 200px;}
+    70%{margin-left: 200px;}
+    80%{margin-right: 200px;}
+    90%{margin-left: 200px;}
+    100%{margin-right: 200px;}
+}
+
+
+
+
+
+
+
+/*Header*/
+
+
+
+header{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-content: center;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo span{
+    display: flex;
+    align-items: center;
+    color: white;
+
+}
+
+
+
+
+
+/*Nav Bar*/
+.navBar
+{
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navLinks{
+    border: 1px solid black;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+
+}
+
+.navLinks ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+}
+.navLinks ul li a {
+    color: white;
+
+}
+
+
+
+
+
+
+/*Banner section*/
+
+.banner{
+    background: url(./img/Cinderella.jpg) no-repeat center 50%; 
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    padding: 4.5em 2.0em 0.5em;
+    margin: 0 0 2.0em;
+  
+}
+
+.banner-content{
+    color: white;
+    width: 55%;
+    padding-top: 30px;
+
+
+}
+
+.banner-content span{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+.banner-content h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 600px;
+    letter-spacing: 3px;
+    text-shadow:2px 2px gray;
+
+}
+
+.banner-content p{
+    margin-bottom: 40px;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px black;
+}
+
+.banner-content button{
+    background-color: transparent;
+    border:  solid 1px black;
+    color: white;
+    text-shadow: 1px 1px gray;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration:  none;
+    display: inline-block;
+    font-size: 16px;
+    
+
+}
+
+
+
+
+/*Main Section*/
+#mainContent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+#mainContent div{
+    background-color: black;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+#mainContent div:nth-child(even){
+    background-color:black;
+}
+#mainContent img{
+    border-radius: 150px;
+}
+#mainContent button{
+    background-color: transparent;
+    color: white;
+}
+
+
+   
+
+
+
+/*Footer*/
+footer{
+list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 1em;
+    color: #fff; 
+
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+
+footer a, footer a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+footer span{
+    color: #fff;
+}
+
+
